@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nanako</title>
+  
+  
+  <link href="http://tanakarino.cn/atom.xml" rel="self"/>
+  
+  <link href="http://tanakarino.cn/"/>
+  <updated>2020-07-23T16:21:07.250Z</updated>
+  <id>http://tanakarino.cn/</id>
+  
+  <author>
+    <name>Nanako</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[20200705] 2017-2018 CCPC, Qinhuangdao</title>
+    <link href="http://tanakarino.cn/2020/07/20/20200705-2017-2018-CCPC-Qinhuangdao/"/>
+    <id>http://tanakarino.cn/2020/07/20/20200705-2017-2018-CCPC-Qinhuangdao/</id>
+    <published>2020-07-20T08:58:22.000Z</published>
+    <updated>2020-07-23T16:21:07.250Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Review&quot;&gt;&lt;a href=&quot;#Review&quot; class=&quot;headerlink&quot; title=&quot;Review&quot;&gt;&lt;/a&gt;Review&lt;/h1&gt;&lt;p&gt;开场跟榜看 L，水题不讲，&lt;strong&gt;10min1A&lt;/strong&gt;，rank10&lt;del&gt;（什么嘛我手速还挺快的）&lt;/del&gt;。跟榜看 C，字符串分类讨论一下，&lt;strong&gt;33min1A&lt;/strong&gt;，rank11&lt;del&gt;（什么嘛我手速还挺快的）&lt;/del&gt;。跟榜看 E，还是字符串分类讨论一下，但是漏情况了交了发 WA……&lt;strong&gt;57min2A&lt;/strong&gt;，rank18&lt;del&gt;（什么嘛我手速还挺快的）&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;到目前为止都还算顺利，但是接下来的 M 我们开始三人互演。首先我们发现安全的程度和到原点的距离有关，但是达到一定临界值之后就一样安全了。一开始我想当然设了个临界值 &lt;code&gt;lim = R - r&lt;/code&gt;，WA 了之后我认真画了个图改成了 &lt;code&gt;lim = max(0, R - 2 * r)&lt;/code&gt;，又 WA 了之后 Luowaterbi 认真画了个图告诉我是 &lt;code&gt;lim = max(0, 2 * r - R)&lt;/code&gt;，又 WA 了之后我才发现其实这是小圆半径不同取值范围时的两种情况，所以改成 &lt;code&gt;lim = abs(R - 2 * r)&lt;/code&gt; 就过了，&lt;strong&gt;109min6A&lt;/strong&gt;，是的，这题交了六发才过，过的时候 rank 已经掉到 66 了。&lt;/p&gt;
+&lt;p&gt;A 很有趣，是个好题，讨论了一会之后离散化过掉了，&lt;strong&gt;184min2A&lt;/strong&gt;。G 讨论了一会之后我发现是从高位到低位贪心，由于需要高精度用 Java 写了一下，不知道 BigInteger 怎么算的内存，交了好几发 MLE 才过，&lt;strong&gt;259min5A&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;过完 A 和 过完 G 的时候 rank 都是 44，但是最后又掉到 54 / 254 了。什么时候能进个 Au 线呢……&lt;/p&gt;
+&lt;h1 id=&quot;Solution（咕咕）&quot;&gt;&lt;a href=&quot;#Solution（咕咕）&quot; class=&quot;headerlink&quot; title=&quot;Solution（咕咕）&quot;&gt;&lt;/a&gt;Solution（咕咕）&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="_训练赛" scheme="http://tanakarino.cn/categories/%E8%AE%AD%E7%BB%83%E8%B5%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[20200614] 2016-2017 ACM-ICPC, Asia Shenyang Regional Contest</title>
+    <link href="http://tanakarino.cn/2020/07/20/20200614-2016-2017-ACM-ICPC-Asia-Shenyang-Regional-Contest/"/>
+    <id>http://tanakarino.cn/2020/07/20/20200614-2016-2017-ACM-ICPC-Asia-Shenyang-Regional-Contest/</id>
+    <published>2020-07-20T08:07:33.000Z</published>
+    <updated>2020-07-20T08:52:06.456Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Review&quot;&gt;&lt;a href=&quot;#Review&quot; class=&quot;headerlink&quot; title=&quot;Review&quot;&gt;&lt;/a&gt;Review&lt;/h1&gt;&lt;p&gt;开场 Luowaterbi 告诉我 I 是 sb 题，让输出四个数的和，然后我就直接 ull 冲了上去 WA 了一发，才发现最大值正好可以卡爆 ull……这种题意义何在啊！！！加了个特判过了，&lt;strong&gt;13min2A&lt;/strong&gt;。然后看榜好像 K 也很签到，于是写了一下，&lt;strong&gt;22min1A&lt;/strong&gt;，由于手速还可以所以 rank28。&lt;/p&gt;
+&lt;p&gt;接下来的 L 和 F 难度好像差不多，我们先读了 L，接着队友又去读 F 了。我对着 L 一顿口胡，最后突然想到正解才发现口胡的全是假的，于是交了一发过了，&lt;strong&gt;60min1A&lt;/strong&gt;，rank 掉到 31。然后我们对着 F 一顿推，但是没啥好的结论。推着推着，Luowaterbi 突然告诉我这个 F 居然有某种奇妙深刻的递推关系。但是数据范围又要求高精度，&lt;del&gt;所以我又开始展示我的垃圾 Java 水平&lt;/del&gt;，这么简单的代码写了好久，然后还连交了四发 WA，debug 了半天之后突然发现是因为文件创建在一个 package 里，所以 Intellij 自动在我的代码开头加了 package 我没发现……&lt;strong&gt;122min5A&lt;/strong&gt; 之后 rank 又掉到 37，&lt;del&gt;又是同题数垫底了……实在是我队传统艺能……&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;接下来 G 和 M 难度好像也差不多，我们先读了 G，接着队友又去读 M 了。我对着 G 一顿口胡&lt;del&gt;，说这个就是基环内向森林啊，然后类似后缀数组一样倍增乱搞一下就能搞出来&lt;/del&gt;。但是后缀数组我学得实在垃圾，只会抄板子，有点写不明白，然后我爬了。但是 Luowaterbi 就不一样了，他看了很久的 M，看着看着，Luowaterbi 突然告诉我这个 M 居然只跟每个位置的后继状态数有关。于是我迅速写了一下，&lt;strong&gt;287min1A&lt;/strong&gt;，rank 又掉到 46 了，我只能爬。&lt;/p&gt;
+&lt;p&gt;总成绩是 5 - 605，rank 50/186。只能说是稳定发挥，但是什么时候能进个 Au 线呢……其实这场六题 + 手速就 Au 了，就是说其实还是有希望的吧……（？&lt;/p&gt;
+&lt;h1 id=&quot;Solution（咕咕）&quot;&gt;&lt;a href=&quot;#Solution（咕咕）&quot; class=&quot;headerlink&quot; title=&quot;Solution（咕咕）&quot;&gt;&lt;/a&gt;Solution（咕咕）&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="_训练赛" scheme="http://tanakarino.cn/categories/%E8%AE%AD%E7%BB%83%E8%B5%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[20200607] 2018-2019 ACM-ICPC, Asia Qingdao Regional Contest</title>
+    <link href="http://tanakarino.cn/2020/06/07/20200607-2018-2019-ACM-ICPC-Asia-Qingdao-Regional-Contest/"/>
+    <id>http://tanakarino.cn/2020/06/07/20200607-2018-2019-ACM-ICPC-Asia-Qingdao-Regional-Contest/</id>
+    <published>2020-06-07T11:24:11.000Z</published>
+    <updated>2020-06-07T12:03:24.647Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Review&quot;&gt;&lt;a href=&quot;#Review&quot; class=&quot;headerlink&quot; title=&quot;Review&quot;&gt;&lt;/a&gt;Review&lt;/h1&gt;&lt;p&gt;感觉还是好菜，该加训了……&lt;/p&gt;
+&lt;p&gt;刚开场就开始演队友。我直接读了 J，迅速大力交了两发 WA 的二分答案。一看 M 过了好多，又大力交了一发 WA。想了一会，才突然意识到 J 题的合法性并不是单调的，于是，Luowaterbi 认为答案就是一个前缀和加一个后缀 min，我照做，又交了一发 WA。&lt;/p&gt;
+&lt;p&gt;此时已经快一个小时了，而我们两个水题都 WA 着……我突然意识到 M 题需要特判 &lt;code&gt;0 1&lt;/code&gt;，改了改过了，&lt;strong&gt;58min2A&lt;/strong&gt;。owojiecao 突然发现 J 题 $0$ 必买，应该去掉 $0$ 再做。我和 Luowaterbi 纷纷感叹自己傻逼，然后我手抖写错，又交了两发才过，&lt;strong&gt;70min5A&lt;/strong&gt;。此时发现 C 过题人数和 J 差不多，于是读 C，发现是个分类讨论傻逼题，然后我第一发没讨论没 $1$ 的情况，第二发交了个弱智 PE，第三发才过，&lt;strong&gt;84min3A&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;我智商完全不在线，短短不到一个半小时的时间连交了七发罚时，已经同题数垫底 rank 105，感谢队友不杀之恩。&lt;/p&gt;
+&lt;p&gt;好在中期打得还不算烂。此时大多数人都是三题， DEF 都是刚有几个人通过。我读了 D，Luowaterbi 读了 F，无果，交换题意，我发现 F 是个找规律的构造题，手玩了一会之后会了，但没认真审题又交了一发 PE，&lt;strong&gt;142min2A&lt;/strong&gt;，rank 上升到 43&lt;del&gt;，还是同题数垫底&lt;/del&gt;。我们又读了难度跟 DF 相近的 E，我说二分答案显然，于是转化成询问给定步数之内能否访问每个位置给定次数。想了一会发现大力贪心似乎可行，但没处理好交了发 WA，遂下机交给 owojiecao 写 D。跟 luowaterbi 一起读了很久 E 的代码，改了三次，终于发现我有个地方写了点很弱智的东西……&lt;strong&gt;228min4A&lt;/strong&gt;，rank 掉到 55&lt;del&gt;，还是同题数垫底（虽然之后有人帮我们垫底了）&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;接下来只有 owojiecao 的 D 比较可以期待的样子，而我和 Luowaterbi 去读剩下的题里读相对可能比较可做的 L。事实证明 L 是个我们之中并没有人会的生成函数，而 owojiecao 的 D 也没调出来……&lt;/p&gt;
+&lt;p&gt;最后 rank 80/354，什么时候能进个 Au 线呢……&lt;/p&gt;
+&lt;h1 id=&quot;Solution（咕咕）&quot;&gt;&lt;a href=&quot;#Solution（咕咕）&quot; class=&quot;headerlink&quot; title=&quot;Solution（咕咕）&quot;&gt;&lt;/a&gt;Solution（咕咕）&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="_训练赛" scheme="http://tanakarino.cn/categories/%E8%AE%AD%E7%BB%83%E8%B5%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020 CCPC-Wannafly Winter Camp Day 1 H</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-H/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-H/</id>
+    <published>2020-06-02T14:51:00.000Z</published>
+    <updated>2020-06-02T15:39:15.675Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-H-最大公约数&quot;&gt;&lt;a href=&quot;#Problem-H-最大公约数&quot; class=&quot;headerlink&quot; title=&quot;Problem H. 最大公约数&quot;&gt;&lt;/a&gt;Problem H. 最大公约数&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给出两个整数 $k,n$ （$1 &#92;leq k &#92;leq n$），求最小的 $y$，使得对于任意 $x &#92;in [1,n]$ 且 $x &#92;neq k$，都满足 $&#92;gcd(x, y) &#92;neq &#92;gcd(k,y)$。如果不存在这样的 $y$，输出$-1$。有 $T$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq T &#92;leq 50$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq k &#92;leq n &#92;leq 500$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;不存在这样的 $y$ 当然是骗你的，因为一定存在……&lt;/p&gt;
+&lt;p&gt;我在狂演 F 题的时候这题就有一些队伍过了，于是 Luowaterbi 和 owojiecao 就在看，但是没什么结论……我演完 F 之后看了一会&lt;del&gt;样例&lt;/del&gt;，猜想答案就是 $k &#92;cdot &#92;prod_{i = 1, i &#92;in p}^{&#92;lfloor &#92;frac{n}{k} &#92;rfloor} i$，虽然不会证明但是我们三个都没想到反例，于是我就交了两发 WA，发现需要高精度，用 Java 重写，过了。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;抄了一个&lt;/del&gt;必要性证明大概是这样的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;必须保证 $k|y$。否则就有 $&#92;gcd(k,y) &#92;neq k$，又因为显然 $&#92;gcd(k,y) = &#92;gcd(&#92;gcd(k,y),y)$，就不符合题意了啊。&lt;/li&gt;
+&lt;li&gt;对于 $[1,&#92;lfloor &#92;frac nk &#92;rfloor]$ 中的每一个质数 $p$，必须保证 $p|&#92;frac yk$。否则就有 $&#92;gcd(pk,y) = k &#92;cdot &#92;gcd(p,y/k) = k =&#92;gcd(k,y)$，就不符合题意了啊。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="数论" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="整除与同余" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/%E6%95%B4%E9%99%A4%E4%B8%8E%E5%90%8C%E4%BD%99/"/>
+    
+    
+    <category term="高精度" scheme="http://tanakarino.cn/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+    <category term="结论/规律" scheme="http://tanakarino.cn/tags/%E7%BB%93%E8%AE%BA-%E8%A7%84%E5%BE%8B/"/>
+    
+    <category term="欧拉筛" scheme="http://tanakarino.cn/tags/%E6%AC%A7%E6%8B%89%E7%AD%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 CCPC-Wannafly Winter Camp Day 1 F</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-F/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-F/</id>
+    <published>2020-06-02T14:19:35.000Z</published>
+    <updated>2020-06-02T14:42:36.376Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-F-乘法&quot;&gt;&lt;a href=&quot;#Problem-F-乘法&quot; class=&quot;headerlink&quot; title=&quot;Problem F. 乘法&quot;&gt;&lt;/a&gt;Problem F. 乘法&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给两个长度分别为 $n,m$ 的数列 $A, B$ 来表示一个 $n &#92;times m$ 的矩阵 $C$（即 $C_{i,j} = A_i &#92;cdot B_j$）。 给出整数 $K$，你需要求出 $C$ 中第 $K$ 大的数。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n,m &#92;leq 10^5$, $1 &#92;leq K &#92;leq n &#92;times m$&lt;/p&gt;
+&lt;p&gt;$-10^6 &#92;leq A_i,B_i &#92;leq 10^6$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;$O(n &#92;log m &#92;log (&#92;max C_{i,j} - &#92;min C_{i,j}))$ 的做法显然吧……&lt;/p&gt;
+&lt;p&gt;我们预先对每一行排好序。对于一个假定的答案 $mid$，我们可以 $O(n)$ 枚举行，对于每一行都 $O(&#92;log m)$ 二分一下计算有多少个数大于 $mid$，就能 $O(n &#92;log m)$ 计算 $mid$ 是第几大。又因为 $mid$ 与其位次是单调的关系，那么考虑二分答案 $mid$，就可以 $O(n &#92;log m &#92;log (&#92;max C_{i,j} - &#92;min C_{i,j}))$ 求 $K$ 大了。&lt;/p&gt;
+&lt;p&gt;二分这种东西需要注意一下细节，尤其是这题还有负数和 $0$……我开场读的第一题就是这个，一眼就会了，以为有希望抢一血，结果是被 &lt;code&gt;lower_bound&lt;/code&gt; 和 &lt;code&gt;upper_bound&lt;/code&gt; 演了很久，调了一个小时……太丢人了……&lt;/p&gt;
+&lt;h2 id=&quot;Code&quot;&gt;&lt;a href=&quot;#Code&quot; class=&quot;headerlink&quot; title=&quot;Code&quot;&gt;&lt;/a&gt;Code&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="基本算法" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="二分答案" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+    
+    
+    <category term="二分答案" scheme="http://tanakarino.cn/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+    
+    <category term="二分" scheme="http://tanakarino.cn/tags/%E4%BA%8C%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 CCPC-Wannafly Winter Camp Day 1 C</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-C/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-C/</id>
+    <published>2020-06-02T10:58:21.000Z</published>
+    <updated>2020-06-28T12:45:25.227Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-C-染色图&quot;&gt;&lt;a href=&quot;#Problem-C-染色图&quot; class=&quot;headerlink&quot; title=&quot;Problem C. 染色图&quot;&gt;&lt;/a&gt;Problem C. 染色图&lt;/h1&gt;&lt;p&gt;&lt;del&gt;色图？哪里有色图？&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;在一张无向图中，如果存在一种方案，使得给每个结点染上一种颜色 $c_i &#92;in [1,k]$ 后，任意一对相邻结点的颜色不同，则称这张无向图可以 $k$ 染色。在有 $n$ 个节点的、可以 $k$ 染色的所有简单图中，选出边数最多的一个，我们记其边数为 $g(n,k)$。&lt;/p&gt;
+&lt;p&gt;现在，给定 $n,l,r$，求 $&#92;sum_{i=l}^{r} g(n,i)$ 对 $998244353$ 取余后的结果。有 $T$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq T &#92;leq 1000$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq l &#92;leq r &#92;leq n &#92;leq 10^9$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;考虑一张有 $n$ 个结点染上 $k$ 种颜色，每种颜色使用了 $a_i$ 次。既然只有同色是不能连边的，那么我们把除了同色的团只玩的边全部连起来。一个大小为 $x$ 的团有 $&#92;frac{x(x+1)}2$ 条边，那么总边数应该是&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;binom{n}{2} -
+&#92;sum_{i=1}^{k} &#92;binom{a_i}{2}&lt;/script&gt;&lt;p&gt;不难发现，要最大化总边数其实也就是要最小化 $&#92;sum_{i=1}^k a_i^2$。为满足这一点，$a_i$ 应当均分。如果 $a_i$ 不是均分，即存在 $i,j$ 使得 $|a_i-a_j| &#92;geq 2$，那么令 $a_i = a_j = &#92;frac{a_i+a_j}{2}$，$&#92;sum_{i=1}^k a_i^2$ 显然变小。所以，$a_i$ 肯定是均分，即有 $n &#92;bmod k$ 个 $a_i$ 等于 $&#92;lfloor &#92;frac nk &#92;rfloor + 1$，剩下的 $k - n &#92;bmod k$ 个 $a_i$ 等于 $&#92;lfloor &#92;frac nk &#92;rfloor$。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数论" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="数论分块" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/"/>
+    
+    
+    <category term="数论分块" scheme="http://tanakarino.cn/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 CCPC-Wannafly Winter Camp Day 1 B</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-B/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-B/</id>
+    <published>2020-06-02T10:56:20.000Z</published>
+    <updated>2020-06-02T10:57:57.627Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-B-密码学&quot;&gt;&lt;a href=&quot;#Problem-B-密码学&quot; class=&quot;headerlink&quot; title=&quot;Problem B. 密码学&quot;&gt;&lt;/a&gt;Problem B. 密码学&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;将小写字母从 $0$ 到 $25$ 编号，将大写字母从 $26$ 到 $51$ 编号。用字符 $a$ 加密字符 $b$ 得到的字符，是 $a$ 和 $b$ 的编号相加后对 $52$ 取余后的结果对应的字符。用字符串 $key$ 加密字符串 $s$ 得到的字符串长度与 $s$ 相同，其中，第 $i$ 个字符是用 $key_i$ 加密 $s_i$ 得到的字符，如果 $key$ 的长度不够，则将 $key$ 重复多次。&lt;/p&gt;
+&lt;p&gt;有 $n$ 个字符串 $s_1,s_2,&#92;dots,s_n$ 和 $m$ 次加密操作 $(x_1,y_1),(x_2,y_2),&#92;dots,(x_n,y_n)$。第 $i$ 次加密操作用 $s_{x_i}$ 加密 $s_{y_i}$，并将 $s_{y_i}$ 替换为加密结果。现在给出 $n$ 个字符串的最终结果和 $m$ 次加密操作，求 $n$ 个字符串的初始值。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n,m &#92;leq 1000$, $1 &#92;leq x_i,y_i &#92;leq n$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq |s_i| &#92;leq 100$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;模拟题，没啥好说的……加密是加解密就是减……&lt;/p&gt;
+&lt;h2 id=&quot;Code&quot;&gt;&lt;a href=&quot;#Code&quot; class=&quot;headerlink&quot; title=&quot;Code&quot;&gt;&lt;/a&gt;Code&lt;/h2&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;algorithm&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstring&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; ll;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N = &lt;span class=&quot;number&quot;&gt;1e5&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x[N], y[N];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; s[N][&lt;span class=&quot;number&quot;&gt;105&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;chartoint&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; c)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ((&lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt; &amp;lt;= c) &amp;amp;&amp;amp; (c &amp;lt;= &lt;span class=&quot;string&quot;&gt;&#39;z&#39;&lt;/span&gt;)) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; c - &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ((&lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt; &amp;lt;= c) &amp;amp;&amp;amp; (c &amp;lt;= &lt;span class=&quot;string&quot;&gt;&#39;Z&#39;&lt;/span&gt;)) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; c - &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;26&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;inttochar&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ((&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &amp;lt;= a) &amp;amp;&amp;amp; (a &amp;lt;= &lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;)) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; a + &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ((&lt;span class=&quot;number&quot;&gt;26&lt;/span&gt; &amp;lt;= a) &amp;amp;&amp;amp; (a &amp;lt;= &lt;span class=&quot;number&quot;&gt;51&lt;/span&gt;)) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; a - &lt;span class=&quot;number&quot;&gt;26&lt;/span&gt; + &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n, m;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d%d&quot;&lt;/span&gt;, &amp;amp;n, &amp;amp;m);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= m;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d%d&quot;&lt;/span&gt;, &amp;amp;x[i], &amp;amp;y[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%s&quot;&lt;/span&gt;, &amp;amp;s[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = m;i &amp;gt;= &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i--) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; lx = &lt;span class=&quot;built_in&quot;&gt;strlen&lt;/span&gt;(s[x[i]]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; ly = &lt;span class=&quot;built_in&quot;&gt;strlen&lt;/span&gt;(s[y[i]]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j &amp;lt; ly;j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; tmp = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp += chartoint(s[y[i]][j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp -= chartoint(s[x[i]][j % lx]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp += &lt;span class=&quot;number&quot;&gt;52&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp %= &lt;span class=&quot;number&quot;&gt;52&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			s[y[i]][j] = inttochar(tmp);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%s&#92;n&quot;&lt;/span&gt;, s[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="基础算法" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="模拟" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/%E6%A8%A1%E6%8B%9F/"/>
+    
+    
+    <category term="模拟" scheme="http://tanakarino.cn/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 CCPC-Wannafly Winter Camp Day 1 A</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-A/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-CCPC-Wannafly-Winter-Camp-Day-1-A/</id>
+    <published>2020-06-02T10:49:10.000Z</published>
+    <updated>2020-06-02T10:51:54.240Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-A-期望逆序对&quot;&gt;&lt;a href=&quot;#Problem-A-期望逆序对&quot; class=&quot;headerlink&quot; title=&quot;Problem A. 期望逆序对&quot;&gt;&lt;/a&gt;Problem A. 期望逆序对&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给 $n$ 个随机变量 $x_1,x_2,&#92;dots,x_n$，$x_i$ 的值是 $[l_i,r_i]$ 中随机选取的整数。你可以将这些随机变量排成任意的顺序，求逆序对数期望的最小值对 $998244353$ 取余后的结果。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n &#92;leq 5 &#92;times 10^3$, $1 &#92;leq l_i &#92;leq r_i &#92;leq 10^9$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;事实上，取值的期望（即 $&#92;frac{l_i+r_i}{2}$）越小就应该排在越前面，这样得到的序列的逆序对数的期望就是最小的。&lt;/p&gt;
+&lt;p&gt;为什么呢？对于任意一个序列，我们选择相邻的两项，其他项不动，考虑这两项是否应该交换。如果前一项的期望比后一项大，那么显然交换之后逆序对数减小，所以答案的序列中相邻里两项一定是前一项的期望比较小，而要满足这个性质就只能令期望单增，于是我们确定了这个序列的顺序。&lt;/p&gt;
+&lt;p&gt;之后就只需要 $O(n^2)$ 枚举每一对变量，$O(1)$ 计算其产生的逆序对数就行了。把两个变量看成分别在 $x$ 轴和 $y$ 轴上的区间，两个变量之间能产生的逆序对数其实就等价于一个矩形在 $y=x$ 的一侧的面积吧，这个就各凭本事吧，现场写的是分类讨论。&lt;/p&gt;
+&lt;h2 id=&quot;Code&quot;&gt;&lt;a href=&quot;#Code&quot; class=&quot;headerlink&quot; title=&quot;Code&quot;&gt;&lt;/a&gt;Code&lt;/h2&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;83&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;algorithm&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstring&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; ll;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N = &lt;span class=&quot;number&quot;&gt;1e5&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; M = &lt;span class=&quot;number&quot;&gt;1e3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mod = &lt;span class=&quot;number&quot;&gt;998244353&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;ll &lt;span class=&quot;title&quot;&gt;qpow&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(ll a, ll b)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	ll ret = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (b) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (b &amp;amp; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) ret = ret * a % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		a = a * a % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		b &amp;gt;&amp;gt;= &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;ll &lt;span class=&quot;title&quot;&gt;inv&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(ll a)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; qpow(a, mod - &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;node&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; l, r;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; a[N];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ll invv[N];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;operator&lt;/span&gt; &amp;lt; (&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; node&amp;amp; a, &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; node&amp;amp; b) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; a.l + a.r &amp;lt; b.l + b.r;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;ll &lt;span class=&quot;title&quot;&gt;calc&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; node&amp;amp; a, &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; node&amp;amp; b)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a.l &amp;lt;= b.l) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a.r &amp;lt;= b.l) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ((a.r &amp;gt; b.l) &amp;amp;&amp;amp; (a.r &amp;lt;= b.r)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			ll tmp = a.r - b.l + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; tmp * (tmp - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a.r &amp;gt; b.r) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			ll tmp = (b.r - b.l + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			ll sum = tmp * (tmp - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			sum += (a.r - b.r) * tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ll tmp = (a.r - a.l + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ll sum = tmp * (tmp - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		sum += (a.l - b.l) * tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;, &amp;amp;n);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d%d&quot;&lt;/span&gt;, &amp;amp;a[i].l, &amp;amp;a[i].r);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	sort(a + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, a + n + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		invv[i] = inv(a[i].r - a[i].l + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	ll q = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		q *= a[i].r - a[i].l + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		q %= mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	ll p = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;lt;= n;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j = i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;j &amp;lt;= n;j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			ll tmp = calc(a[i], a[j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp = tmp * invv[i] % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tmp = tmp * invv[j] % mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			p += tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (p &amp;gt;= mod) p -= mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%lld&quot;&lt;/span&gt;, p);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="基础算法" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="贪心" scheme="http://tanakarino.cn/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/%E8%B4%AA%E5%BF%83/"/>
+    
+    
+    <category term="贪心" scheme="http://tanakarino.cn/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[20200426] 2020 Petrozavodsk Winter Camp Day 5</title>
+    <link href="http://tanakarino.cn/2020/06/02/20200426-2020-Petrozavodsk-Winter-Camp-Day-5/"/>
+    <id>http://tanakarino.cn/2020/06/02/20200426-2020-Petrozavodsk-Winter-Camp-Day-5/</id>
+    <published>2020-06-02T10:42:17.000Z</published>
+    <updated>2020-06-02T10:54:26.212Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Review&quot;&gt;&lt;a href=&quot;#Review&quot; class=&quot;headerlink&quot; title=&quot;Review&quot;&gt;&lt;/a&gt;Review&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://codeforces.com/profile/triple__a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;triple_a&lt;/a&gt; 问我和 &lt;a href=&quot;https://codeforces.com/profile/nezzar&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;clp012345&lt;/a&gt; 要不要来玩，于是我就打了&lt;del&gt;，前 World Finalist 带飞谁不爱呢&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;因为纯属娱乐所以可能并不是全力打，不过也并没有做到同一时刻只有一个人写……总之就是图一乐吧。&lt;/p&gt;
+&lt;p&gt;刚开场的时候因为是娱乐所以他们两个也就随便开题不跟榜了，我们各自读了一下几道题。clp012345 开始猛凹 C 凹了接近两个小时&lt;del&gt;，结果是 C 最后也没过&lt;/del&gt;。我看到有人过 L 就大力 WA 了一发，发现把大于写成大于等于，&lt;strong&gt;43min2A&lt;/strong&gt;。B 题 triple_a 说只会 TLE 的枚举子集，于是 clp012345 说 Sum over Submask DP 能做，&lt;strong&gt;51min1A&lt;/strong&gt;。triple_a 又读了 I 题，说做法显然但是难写，我一看题居然是原题（2016 CCPC Changchun J），可能毛子出题人没看过国内这场，于是直接复制粘贴交了，&lt;strong&gt;71min1A&lt;/strong&gt;。G 我之前就说是大力枚举，但我不会计算几何，让 triple_a 写了，&lt;strong&gt;105min2A&lt;/strong&gt;。我们交流了一下 F 的题意，然后 triple_a 觉得他大概会写，然后他说反正是随便打打所以他有事要出门了（草）。我大力猜了一下 A 题有个结论，但是需要筛 $10^{11}$ 以内的质数个数，时间复杂度没法接受，clp012345 告诉我有一种叫作 &lt;a href=&quot;https://tanakarino.cn/2020/04/27/Meissel-Lehmer算法/&quot;&gt;Meissel-Lehmer&lt;/a&gt; 的神棍算法可以 $O(n^&#92;frac 23)$ 求这个东西……找了个板子复制粘贴（？），然后我搞错边界，又贡献一发罚时，&lt;strong&gt;156min2A&lt;/strong&gt;。期间 clp012345 单切了 H（我题都没读……），&lt;strong&gt;167min2A&lt;/strong&gt;。&lt;del&gt;接下来我假装看 C 和 E，其实已经没思路了完全躺了。&lt;/del&gt;但他们两个还是很猛，clp012345 单切了 J，&lt;strong&gt;230min4A&lt;/strong&gt;。triple_a 回来把 F 写了，&lt;strong&gt;257min2A&lt;/strong&gt;。我跟 clp012345 说 E 题的圆其实就是竖线，他说用离散化线段树维护一下就行，&lt;strong&gt;293min4A&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;前 World Finalist 带飞果然牛逼，9 个题&lt;del&gt;，力压 dmy&lt;/del&gt;，我全程躺着被带飞。&lt;/p&gt;
+&lt;h1 id=&quot;Solution（待完善）&quot;&gt;&lt;a href=&quot;#Solution（待完善）&quot; class=&quot;headerlink&quot; title=&quot;Solution（待完善）&quot;&gt;&lt;/a&gt;Solution（待完善）&lt;/h1&gt;&lt;h2 id=&quot;Problem-A-Bags-of-Candies&quot;&gt;&lt;a href=&quot;#Problem-A-Bags-of-Candies&quot; class=&quot;headerlink&quot; title=&quot;Problem A. Bags of Candies&quot;&gt;&lt;/a&gt;Problem A. Bags of Candies&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-A/&quot;&gt;https://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-A/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Problem-B-Binomial&quot;&gt;&lt;a href=&quot;#Problem-B-Binomial&quot; class=&quot;headerlink&quot; title=&quot;Problem B. Binomial&quot;&gt;&lt;/a&gt;Problem B. Binomial&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-B/&quot;&gt;https://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-B/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="_训练赛" scheme="http://tanakarino.cn/categories/%E8%AE%AD%E7%BB%83%E8%B5%9B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Meissel-Lehmer算法</title>
+    <link href="http://tanakarino.cn/2020/06/02/Meissel-Lehmer%E7%AE%97%E6%B3%95/"/>
+    <id>http://tanakarino.cn/2020/06/02/Meissel-Lehmer%E7%AE%97%E6%B3%95/</id>
+    <published>2020-06-02T10:34:41.000Z</published>
+    <updated>2020-06-02T10:38:20.810Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;引入&quot;&gt;&lt;a href=&quot;#引入&quot; class=&quot;headerlink&quot; title=&quot;引入&quot;&gt;&lt;/a&gt;引入&lt;/h1&gt;&lt;p&gt;首先引入一个问题。LibreOJ 6235：令 $&#92;pi(n)$ 为 $n$ 以内的质数个数，求 $&#92;pi(n)$ $(1 &#92;leq n &#92;leq 10^{11})$。&lt;/p&gt;
+&lt;p&gt;当然你可能会说你有分段打表的做法。众所周知，$1 &#92;leq l &#92;leq r &#92;leq 10^{12}$ 且 $0 &#92;leq r - l &#92;leq 10^6$ 时，$[l, r]$ 中质数个数有一个很 trivial 的类似 Eratosthenes 筛的 $O((r - l)&#92;log &#92;log  &#92;sqrt r)$ 的做法。在这个基础上把 $[1, 10^{11}]$ 分成 $10^4$ 段，每段在本地预处理一下，段外的部分再单独算。这样分段打表确实可以卡过去，但是我们有不那么生草的做法：&lt;del&gt;洲阁筛&lt;/del&gt; &lt;del&gt;min_25筛&lt;/del&gt; Meissel-Lehmer 算法可以在 $O(n^{&#92;frac23})$ 的时间复杂度内计算 $&#92;pi(n)$。&lt;/p&gt;
+&lt;p&gt;这个算法在算法竞赛选手之间并不怎么普及（所以想写这篇文章），可能是因为实现起来确实略微有点麻烦（尤其是对不能抄板子的 OI 选手来说？）。虽然说 Miller-Rabin 素性判断和 Pollard-Rho 质因数分解也很麻烦，但也面对的场景大概也多一些，相比之下 Meissel-Lehmer 算法在算法竞赛生涯中可能遇不到几次（？）。目前见到的相关题目只有 2016 ICPC 沈阳赛区网络赛 J 和 2020 毛营 Day5 I，更生草的是可以看到后者的官方题解就是分段打表……大概进一步印证了这个算法的冷门……？&lt;/p&gt;
+&lt;h1 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;原理&lt;/h1&gt;&lt;p&gt;令 $p_1, p_2, &#92;dots, p_m$ 为前 $m$ 个质数。定义 $&#92;phi(n, m)$ 为 $[1, n]$ 内所有质因子都大于 $p_m$ 的数的个数，$P_k(n, m)$ 为 $[1, n]$ 内恰有 $k$ 个大于 $p_m$ 的质因子的数的个数。 特别地，令 $P_0(n, m) = 1$，则有&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;phi(n, m) = P_0(n, m) + P_1(n, m) + &#92;dots + P_k(n, m) + &#92;dots&lt;/script&gt;&lt;p&gt;注意到 $p_m^k &amp;gt; n$ 时有 $P_k(n, m) = 0$，所以，如果我们取 $x &#92;in [n^{&#92;frac13}, n^{&#92;frac12}]$ 并令 $m = &#92;pi(x)$，对于任意 $k &#92;geq 3$，都有 $P_k(n, m) = 0$。即，&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;phi(n, m) = P_0(n, m) + P_1(n, m) + P_2(n, m)&lt;/script&gt;&lt;p&gt;根据定义，显然 $P_1(n, m) = &#92;pi(n) - m$，于是我们对上式适当变换，得&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;pi(n) = &#92;phi(n, m) - P_2(n, m) + m - 1&lt;/script&gt;&lt;p&gt;接下来，我们只需要计算 $&#92;phi(n, m)$ 和 $P_2(n, m)$。根据定义，不难得到其计算方式如下：&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+P_2(n, m) = &#92;sum_{x &lt; p &#92;leq &#92;sqrt n} (&#92;pi(&#92;frac np) - &#92;pi(p) + 1)&lt;/script&gt;&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;phi(n, m) =
+&#92;begin{cases}
+[n],                                          &amp; m = 0    &#92;&#92;
+&#92;phi(n, m - 1) - &#92;phi(&#92;frac {n}{p_m}, m - 1), &amp; m &#92;geq 1
+&#92;end{cases}&lt;/script&gt;&lt;h1 id=&quot;复杂度分析&quot;&gt;&lt;a href=&quot;#复杂度分析&quot; class=&quot;headerlink&quot; title=&quot;复杂度分析&quot;&gt;&lt;/a&gt;复杂度分析&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="数论" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="整除与同余" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/%E6%95%B4%E9%99%A4%E4%B8%8E%E5%90%8C%E4%BD%99/"/>
+    
+    
+    <category term="Meissel-Lehmer算法" scheme="http://tanakarino.cn/tags/Meissel-Lehmer%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 L</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-L/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-L/</id>
+    <published>2020-06-02T10:21:19.000Z</published>
+    <updated>2020-06-02T10:23:21.328Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-L-Wizards-Unite&quot;&gt;&lt;a href=&quot;#Problem-L-Wizards-Unite&quot; class=&quot;headerlink&quot; title=&quot;Problem L. Wizards Unite&quot;&gt;&lt;/a&gt;Problem L. Wizards Unite&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给 $1$ 把金钥匙（可多次使用的钥匙），$k$ 把银钥匙（只能用一次）。给 $n$ 个箱子，每个箱子有一个打开所需时间 $t_i$（跟钥匙类型无关）。一把钥匙同时只能开一个箱子，问打开所有箱子所需的最小总时间。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$0 &#92;leq k &amp;lt; n &#92;leq 10^5$&lt;/p&gt;
+&lt;p&gt;$0 &#92;leq t_i &#92;leq 10^9$&lt;/p&gt;
+&lt;p&gt;$&#92;sum n &#92;leq 10^6$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;本场最简单的题。&lt;/p&gt;
+&lt;p&gt;不失一般性，我们认为所有箱子按 $t_i$ 排升序。显然方案只能是 $k$ 把银钥匙都用来开一个箱子，金钥匙开其他所有箱子，而答案就是以下两者中的较大值：用银钥匙的箱子中耗时最长的一个的耗时；金钥匙开其他所有箱子的耗时之和。&lt;/p&gt;
+&lt;p&gt;注意到答案无论如何也不可能小于 $t_n$，也就是说用银钥匙开 $t_n$ 箱子一定不会浪费时间。那么为了令金钥匙耗时之和尽可能小，实际上 $k$ 把银钥匙开的就是最右边的 $k$ 个箱子，于是答案就很显然了。时间复杂度 $O(n &#92;log n)$。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="结论/规律" scheme="http://tanakarino.cn/categories/%E7%BB%93%E8%AE%BA-%E8%A7%84%E5%BE%8B/"/>
+    
+    
+    <category term="结论/规律" scheme="http://tanakarino.cn/tags/%E7%BB%93%E8%AE%BA-%E8%A7%84%E5%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 J</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-J/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-J/</id>
+    <published>2020-06-02T10:14:35.000Z</published>
+    <updated>2020-06-02T10:16:51.608Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-J-Space-Gophers&quot;&gt;&lt;a href=&quot;#Problem-J-Space-Gophers&quot; class=&quot;headerlink&quot; title=&quot;Problem J. Space Gophers&quot;&gt;&lt;/a&gt;Problem J. Space Gophers&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;有一个由边长为 $1$ 的小正方体组成的边长为 $10^6$ 的实心正方体。在其中挖 $n$ 条隧道，每条隧道用 $(-,y_i,z_i)$ 或 $(x_i,-,z_i)$ 或 $(x_i,y_i,-)$ 表示。挖隧道的含义是，指定其中两个维度的坐标，沿平行于另一个维度轴线的方向把 $10^6$ 个方块拿走。挖完 $n$ 条隧道之后，$q$ 次询问两个点 $(s_x,s_y,s_z)$ 和 $(t_x,t_y,t_z)$ 是否可以通过若干条隧道连通。保证 $s$ 和 $t$ 处于隧道中。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq z &#92;leq 6$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n &#92;leq 3 &#92;times 10^5$, $1 &#92;leq x_i,y_i,z_i &#92;leq 10^6$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq q &#92;leq 5 &#92;times 10^5$, $1 &#92;leq s_x,s_y,s_z,t_x,t_y,t_z &#92;leq 10^6$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;clp 单切之前大致跟我讲了一下做法。实际上两条隧道连通 iff 某一个维度坐标相等或相差 1，于是我们要做的事情就是把所有这样的隧道对找出来，在并查集上 merge 起来。&lt;/p&gt;
+&lt;p&gt;这个东西说起来简单，实现起来就比较呕吐……具体还是看代码吧……&lt;del&gt;似乎是这篇文章里最长的代码&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Code-By-clp012345&quot;&gt;&lt;a href=&quot;#Code-By-clp012345&quot; class=&quot;headerlink&quot; title=&quot;Code (By clp012345)&quot;&gt;&lt;/a&gt;Code (By clp012345)&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="数据结构" scheme="http://tanakarino.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="并查集" scheme="http://tanakarino.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    
+    <category term="并查集" scheme="http://tanakarino.cn/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 I</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-I/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-I/</id>
+    <published>2020-06-02T10:11:12.000Z</published>
+    <updated>2020-06-02T10:18:22.867Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-I-Sum-of-Palindromes&quot;&gt;&lt;a href=&quot;#Problem-I-Sum-of-Palindromes&quot; class=&quot;headerlink&quot; title=&quot;Problem I. Sum of Palindromes&quot;&gt;&lt;/a&gt;Problem I. Sum of Palindromes&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;把给定的 $n$ 位数分解成不超过 $25$ 个回文数（不允许前导零）。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq z &#92;leq 20000$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n &#92;leq 10^5$&lt;/p&gt;
+&lt;p&gt;$&#92;sum n &#92;leq 3 &#92;times 10^6$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;跟国内比赛撞车了（2016 CCPC Changchun J），可能这些毛子出题人没怎么看国内比赛的题。&lt;/p&gt;
+&lt;p&gt;做法很简单，就是每次减掉小于当前数的最大的回文数。很显然每次可以减掉一半的长度，所以大概只需要 $&#92;log n$ 次就够了。唯一的难点在于实现有点恶心，需要上高精度，不过我直接复制以前打 16 长春时候的代码了。（那个时候写得很丑不要骂我呜呜呜）&lt;/p&gt;
+&lt;h2 id=&quot;Code-By-Nanako&quot;&gt;&lt;a href=&quot;#Code-By-Nanako&quot; class=&quot;headerlink&quot; title=&quot;Code (By Nanako)&quot;&gt;&lt;/a&gt;Code (By Nanako)&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="高精度" scheme="http://tanakarino.cn/categories/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+    
+    <category term="高精度" scheme="http://tanakarino.cn/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 H</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-H/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-H/</id>
+    <published>2020-06-02T10:07:10.000Z</published>
+    <updated>2020-06-02T10:18:45.548Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-H-Lighthouses&quot;&gt;&lt;a href=&quot;#Problem-H-Lighthouses&quot; class=&quot;headerlink&quot; title=&quot;Problem H. Lighthouses&quot;&gt;&lt;/a&gt;Problem H. Lighthouses&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给一个有 $n$ 个顶点的凸多边形，其顶点用 $(x_i,y_i)$ 表示。以 $n$ 个顶点为结点，给定 $m$ 条边 $(u_i,v_i)$。希望求出图上最长的（指欧几里得距离）且不和自己相交的（几何意义上）路的长度。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$3 &#92;leq n &#92;leq 300$, $0 &#92;leq m &#92;leq &#92;frac{n(n-1)}{2}$, $1 &#92;leq u_i &#92;neq v_i &#92;leq n$&lt;/p&gt;
+&lt;p&gt;$-10^9 &#92;leq x_i, y_i &#92;leq 10^9$&lt;/p&gt;
+&lt;p&gt;$&#92;sum n &#92;leq 3000$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;这题赛中我读都没读就被 clp012345 切了，赛后才看。&lt;/p&gt;
+&lt;p&gt;经过观察我们发现其实合法的路只能是在环上往一个方向转，那么我们上一个区间 DP 就可以了。开三个维度，分别表示起点、终点、顺/逆时针，状态转移 $O(n)$ 枚举。时间复杂度 $O(n^3)$。&lt;/p&gt;
+&lt;p&gt;区间 DP 要上环的话，通常做法就是开两倍数组复制一遍吧，参考石子合并。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="动态规划" scheme="http://tanakarino.cn/categories/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="区间DP" scheme="http://tanakarino.cn/categories/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8C%BA%E9%97%B4DP/"/>
+    
+    
+    <category term="区间dp" scheme="http://tanakarino.cn/tags/%E5%8C%BA%E9%97%B4dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 G</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-G/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-G/</id>
+    <published>2020-06-02T10:04:41.000Z</published>
+    <updated>2020-06-02T10:19:12.918Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-G-Invited-Speakers&quot;&gt;&lt;a href=&quot;#Problem-G-Invited-Speakers&quot; class=&quot;headerlink&quot; title=&quot;Problem G. Invited Speakers&quot;&gt;&lt;/a&gt;Problem G. Invited Speakers&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给定 $2n$ 个不同的点 $(x_i,y_i)$，$A$ 类型和 $B$ 类型各 $n$ 个，保证不存在三点共线。希望你能给出一种方案把它们配对成 $n$ 对 $AB$，并且每对 $AB$ 之间用折线（$[1, 100]$ 条首尾相连的线段）相连，折线之间两两不交。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq z &#92;leq 200$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n &#92;leq 6$&lt;/p&gt;
+&lt;p&gt;$0 &#92;leq |x_i|,|y_i| &#92;leq 100$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;我读的题，第一反应是：就这？&lt;/p&gt;
+&lt;p&gt;还害我确认了好几遍题意和数据范围。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;精通脚撕 FFT 的各种姿势的&lt;/del&gt;队友 Luowaterbi 曾经告诉我，没有三点共线的时候，两种一样多的点必然存在一种配对方案使得每对之间只用一条线段相连并且所有线段都不交。既然这题数据范围这么小，直接大力枚举配对方案，再大力枚举判断是否存在两线段交就行了。时间复杂度 $O(n!n^2)$。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算几何" scheme="http://tanakarino.cn/categories/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    
+    
+    <category term="计算几何" scheme="http://tanakarino.cn/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 F</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-F/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-F/</id>
+    <published>2020-06-02T09:57:10.000Z</published>
+    <updated>2020-06-02T10:19:42.090Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-F-The-Halfwitters&quot;&gt;&lt;a href=&quot;#Problem-F-The-Halfwitters&quot; class=&quot;headerlink&quot; title=&quot;Problem F. The Halfwitters&quot;&gt;&lt;/a&gt;Problem F. The Halfwitters&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给定长度 $n$，给定 $a, b, c$，给 $d$ 次询问。每次询问是一个长度为 $n$ 的排列，你可以对这个票列做三种操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;花费 $a$ 代价，交换相邻的两个数；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;花费 $b$ 代价，翻转这个排列；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;花费 $c$ 代价，shuffle 这个排列。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于每次询问，你需要求出，在最优的操作策略下，把排列排成升序所需的最小期望代价。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$2 &#92;leq n &#92;leq 16$, $1 &#92;leq a, b, c &#92;leq 1000$, $1 &#92;leq d &#92;leq 10000$&lt;/p&gt;
+&lt;p&gt; $&#92;sum d &#92;leq 10^5$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;考虑只有第一种操作，我们不难发现，总代价只跟逆序对数 $inv$ 有关。&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+ans_{1}(inv) = inv &#92;cdot a&lt;/script&gt;&lt;p&gt;考虑加上第二种操作，我们不难发现，先翻转一下再只进行以上操作可能会更快！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数学" scheme="http://tanakarino.cn/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="概率与期望" scheme="http://tanakarino.cn/categories/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E6%9C%9F%E6%9C%9B/"/>
+    
+    
+    <category term="dp" scheme="http://tanakarino.cn/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 B</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-B/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-B/</id>
+    <published>2020-06-02T09:51:19.000Z</published>
+    <updated>2020-06-02T10:20:11.602Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-B-Binomial&quot;&gt;&lt;a href=&quot;#Problem-B-Binomial&quot; class=&quot;headerlink&quot; title=&quot;Problem B. Binomial&quot;&gt;&lt;/a&gt;Problem B. Binomial&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;给定序列 $a_1,a_2,&#92;dots, a_n$，问有多少对 $(a_i,a_j)$ 满足 $&#92;binom{a_i}{a_j} &#92;bmod 2 = 1$ 。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq z &#92;leq 10$&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq n &#92;leq 10^6$, $1 &#92;leq a_i &#92;leq 10^6$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;Lucas 定理有一个经典的推论：&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;binom{a_i}{a_j} &#92;bmod 2 = 1 &#92;leftrightarrow a_i &#92;&amp; a_j = a_j&lt;/script&gt;&lt;p&gt;因此，问题转化为求&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;sum_{i=1}^{n} &#92;sum_{j=1}^{n} [a_i &#92;&amp; a_j = a_j]&lt;/script&gt;&lt;p&gt;记 $m = &#92;lceil &#92;log (&#92;max a_i) &#92;rceil$。显然，暴力枚举可以做到 $O(n^2)$ 的复杂度。优化一下，枚举子集可以做到 $O(3^m)$ 的复杂度。但是要通过这题还是不够。clp012345 说可以 &lt;a href=&quot;https://codeforces.com/blog/entry/45223&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sum over Submask DP&lt;/a&gt; 做到 $O(m2^m)$，于是 triple_a 就现学现用写了一个。&lt;/p&gt;
+&lt;p&gt;这个算法本身就不讲了，可以看上面链接的文章。在国内，这个算法一般被称作快速莫比乌斯变换 (FMT) 或者子集和变换，英文不好的话也可以搜这两个词，但感觉其实大部分文章都写得对新手不是很友好。个人觉得可以看&lt;a href=&quot;http://blog.leanote.com/post/rockdu/TX20&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这篇&lt;/a&gt;，我觉得下面这张插图真的把 FMT 解释得非常清楚。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数论" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="FMT/FWT" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/FMT-FWT/"/>
+    
+    
+    <category term="Lucas定理" scheme="http://tanakarino.cn/tags/Lucas%E5%AE%9A%E7%90%86/"/>
+    
+    <category term="FMT/FWT" scheme="http://tanakarino.cn/tags/FMT-FWT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 Petrozavodsk Winter Camp Day 5 A</title>
+    <link href="http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-A/"/>
+    <id>http://tanakarino.cn/2020/06/02/2020-Petrozavodsk-Winter-Camp-Day-5-A/</id>
+    <published>2020-06-02T09:46:06.000Z</published>
+    <updated>2020-07-20T18:30:07.925Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Problem-A-Bags-of-Candies&quot;&gt;&lt;a href=&quot;#Problem-A-Bags-of-Candies&quot; class=&quot;headerlink&quot; title=&quot;Problem A. Bags of Candies&quot;&gt;&lt;/a&gt;Problem A. Bags of Candies&lt;/h1&gt;&lt;h2 id=&quot;Statement&quot;&gt;&lt;a href=&quot;#Statement&quot; class=&quot;headerlink&quot; title=&quot;Statement&quot;&gt;&lt;/a&gt;Statement&lt;/h2&gt;&lt;p&gt;把 $A = {1,2,&#92;dots,n}$ 分成尽可能多对，使得每一对的两个数都不互质，问 $n$ 减去配对次数的值。有 $z$ 组测试数据。&lt;/p&gt;
+&lt;p&gt;$1 &#92;leq z &#92;leq 5$&lt;/p&gt;
+&lt;p&gt;$2 &#92;leq n &#92;leq 10^{11}$&lt;/p&gt;
+&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;半场的时候动这个题的队伍只有个位数。可能大家都觉得有别的题可做，不像我这么菜别的都不会就来瞎猜结论了啊。于是结论就是，将 $1$ 和大于 $&#92;lfloor &#92;frac n2 &#92;rfloor$ 的质数从 $A$ 里删掉，剩下的集合 $A’$ 一定是可以匹配满的，所以配对次数就是 $&#92;frac {|A’|}2$。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;赛中是瞎猜的，&lt;/del&gt;这里给一个简单证明。&lt;/p&gt;
+&lt;p&gt;将 $A’$ 的所有元素按最大质因子 $d$ 分组，那么每组都可以表示成 $A_d = {d,2d,&#92;dots,&#92;lfloor &#92;frac nd &#92;rfloor d}$ 的形式（注意并不一定 $|A_d|=&#92;lfloor &#92;frac nd &#92;rfloor$，比如 $77 &#92;notin A_7$），显然组内的数都是不互质的。&lt;/p&gt;
+&lt;p&gt;如果 $|A_d|$ 是偶数，直接令组内的数任意两两配对；如果 $|A_d|$ 是奇数，则除了 $2d$ 以外任意两两配对。所有组都作完以上匹配之后，剩下的数都是 $2$ 的倍数，所以也都不互质，也可以任意两两配对。注意到对于任意 $d$ 有 $|A_d| &#92;geq 2$ 即不存在 $|A_d| = 1$，所以最后剩下的数显然至多只有一个。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数论" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="整除与同余" scheme="http://tanakarino.cn/categories/%E6%95%B0%E8%AE%BA/%E6%95%B4%E9%99%A4%E4%B8%8E%E5%90%8C%E4%BD%99/"/>
+    
+    
+    <category term="Meissel-Lehmer算法" scheme="http://tanakarino.cn/tags/Meissel-Lehmer%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+</feed>
